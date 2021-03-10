@@ -108,7 +108,8 @@ ul li {
   color: #292929;
 }
 .headline__subtitle {
-  padding: 0 26%;
+  max-width: 44%;
+  margin: 0 16.5rem;
 }
 
 .hero {
@@ -252,22 +253,19 @@ ul li {
 .benefit:last-child::before {
   content: none;
 }
+.benefit__image {
+  margin-bottom: 20px;
+}
 .benefit__image-wrap {
   background: #F2F5F4;
   width: 128px;
   height: 128px;
   border-radius: 50%;
   position: relative;
-  margin-bottom: 20px;
   overflow: hidden;
-}
-.benefit__icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .benefit__title {
   font-size: 27px;
