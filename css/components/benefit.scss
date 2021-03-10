@@ -16,6 +16,10 @@
       content: none;
     }
   
+
+    &__image {
+      margin-bottom: 20px;
+    }
   
     &__image-wrap {
       background: #F2F5F4;
@@ -23,18 +27,12 @@
       height: 128px;
       border-radius: 50%;
       position: relative;
-      margin-bottom: 20px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
-    &__icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-    }
   
     &__title {
       font-size: 27px;
