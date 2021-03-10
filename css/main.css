@@ -142,6 +142,8 @@ ul li {
 }
 .hero__text {
   max-width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .hero__heading {
   font-size: 48px;
@@ -191,6 +193,8 @@ ul li {
 .features {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  bottom: 3rem;
 }
 
 .feature {
@@ -202,6 +206,9 @@ ul li {
 }
 .feature__text {
   font-size: 16px;
+}
+.feature:last-child {
+  margin-right: 0px;
 }
 
 .benefits-section {
@@ -352,6 +359,9 @@ ul li {
   overflow: hidden;
 }
 .interactive-avatar_active {
+  border-color: #497870;
+}
+.interactive-avatar:hover {
   border-color: #497870;
 }
 .interactive-avatar__link {
@@ -536,6 +546,9 @@ ul li {
   border: 1px solid #ffffff;
   border-radius: 50%;
   pointer-events: none;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0px;
 }
 .fixed-menu__link {
   display: inline-block;
