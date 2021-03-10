@@ -8,6 +8,10 @@
     &_active {
       border-color: $green;
     }
+
+    &:hover {
+      border-color: $green;
+    }
   
     &__link {
       display: block;
