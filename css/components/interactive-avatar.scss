@@ -11,6 +11,7 @@
 
     &:hover {
       border-color: $green;
+      transition: 0.5s;
     }
   
     &__link {
