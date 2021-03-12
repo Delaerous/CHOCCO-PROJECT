@@ -109,7 +109,7 @@ ul li {
 }
 .headline__subtitle {
   max-width: 44%;
-  margin: 0 16.5rem;
+  margin: 0 auto;
 }
 
 .hero {
@@ -361,6 +361,7 @@ ul li {
 }
 .interactive-avatar:hover {
   border-color: #497870;
+  transition: 0.5s;
 }
 .interactive-avatar__link {
   display: block;
