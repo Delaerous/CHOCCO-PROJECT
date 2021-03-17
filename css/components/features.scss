@@ -1,6 +1,10 @@
 .features {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
+    flex-wrap: wrap;
     bottom: 3rem;
+
+    @include tablet {
+        display: none;
+    }
 }

@@ -1,16 +1,24 @@
 .section {
-    height: 100vh;
-    min-height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    &__title {
-      font-size: $headerFontSize;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 60px;
-      text-align: center;
-      color: $black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(62px) 0;
+
+  @include mobile {
+    padding: rem(90px) 0;
+  }
+
+  &__title {
+    font-size: rem($headerFontSize);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: rem(60px);
+    text-align: center;
+    color: $black;
+
+    @include mobile {
+      font-size: rem(40px);
     }
   }
+}

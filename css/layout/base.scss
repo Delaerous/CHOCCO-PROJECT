@@ -1,22 +1,21 @@
-$containerWidth: 960px;
-$baseFontSize: 18px;
-$headerFontSize: 48px;
-
-$blue: #61C4D9;
-$green: #497870;
-$darkGreen: #2E4E3F;
-$gray: #666666;
-$black: #292929;
-$white: #ffffff;
-
 html, body {
   height: 100%;
+  font-size: $baseFontSize;
+  font-weight: 400;
+}
+
+html {
+  @include tablet {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include mobile {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 body {
   font-family: 'Alegreya Sans', Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: $baseFontSize;
   color: $gray;
   line-height: 1.42;
   margin: 0;
@@ -55,8 +54,8 @@ ul li {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: $containerWidth;
   margin: 0 auto;
-  padding: 0 10px;
+  position: relative;
 }

@@ -1,25 +1,71 @@
 .reviews-section {
-    position: relative;
-    background: url("../img/backgrounds/Ягода-3\ 1.png") right 2% top 6% no-repeat;
-    z-index: 10;
-  
-    &::before {
-      content: url("../img/backgrounds/rewiew-bg-leaf.png");
-      position: absolute;
-      left: 0;
-      bottom: -28%;
-    }
-  
-    &::after {
-      content: url("../img/backgrounds/Ягоды\ 2\ \(1\).png");
-      position: absolute;
-      left: -10px;
-      bottom: -14%;
-    }
-  
-    &__title {
-      margin-bottom: 32px;
-    }
-  
-  
+  position: relative;
+  background: url("../img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
+  z-index: 10;
+
+  @include tablet {
+    background-position: right -4% top 6%;
   }
+
+  @include mobile {
+    background-position: right -7% top 0%;
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translateY(-60%);
+    width: rem(102px);
+    height: rem(321px);
+    background: url("../img/bg/reviews-decor-3.png") bottom left / contain no-repeat ;
+
+    @include tablet {
+      width: rem(90px);
+      height: rem(282px);
+    }
+
+    @include mobile {
+      width: rem(75px);
+      height: rem(235px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 100%;
+    transform: translateY(-50%);
+    width: rem(135px);
+    height: rem(193px);
+    background: url("../img/bg/reviews-decor-2.png") bottom left / contain no-repeat ;
+
+    @include tablet {
+      width: rem(118px);
+      height: rem(170px);
+    }
+
+    @include mobile {
+      width: rem(122px);
+      height: rem(176px);
+      left: -34px;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(32px);
+
+    @include mobile {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__container {
+    z-index: 10;
+  }
+
+
+}

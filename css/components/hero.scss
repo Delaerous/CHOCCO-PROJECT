@@ -1,50 +1,117 @@
 .hero {
-    height: 100vh;
-    min-height: 650px;
-    color: $white;
-    background: url('../img/backgrounds/узор\ 1.png') right bottom no-repeat;
-    background-color: $blue;
-    position: relative;
-  
-    &::before {
-        content: url("../img/backgrounds/comp.png");
-      position: absolute;
-      right: 0%;
-      bottom: -8%;
-    }
-  
-    &::after {
-        content: url("../img/backgrounds/Лист\ 3.png");
-      position: absolute;
-      left: 3%;
-      bottom: -6%;
-    }
-  
-    &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background: url('../img/backgrounds/Батончики.png') right center / 50% auto no-repeat;
-    }
-  
-    &__text {
-      max-width: 40%;
-      margin-top: auto;
-    margin-bottom: auto;
-    }
-  
-    &__heading {
-      font-size: 48px;
-      font-weight: 700;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-  
-    &__description {
-      font-size: 21px;
-      margin-bottom: 32px;
+  min-height: 100vh;
+  color: $white;
+  background: url('../img/bg/leaf.png') right bottom no-repeat;
+  background-color: $blue;
+  position: relative;
+
+  @include tablet {
+    background-position: right bottom 68%;
+  }
+
+  @include mobile {
+    background-position: right bottom 75%;
+    background-size: 68%;
+  }
+
+  &::before {
+    content: url("../img/bg/hero-decor-1.png");
+    position: absolute;
+    right: 0%;
+    bottom: -8%;
+
+    @include tablet {
+      content: none;
     }
   }
+
+  &::after {
+    content: url("../img/bg/hero-decor-2.png");
+    position: absolute;
+    left: 3%;
+    bottom: -6%;
+
+    @include tablet {
+      content: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding-top: rem(20px);
+    padding-bottom: rem(50px);
+    background: url('../img/bg/chocco.png') right center / 52% auto no-repeat;
+
+    @include tablet {
+      background: none;
+    }
+  }
+
+  &__text {
+    position: relative;
+    max-width: 40%;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    @include tablet {
+      max-width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &::before {
+        content: "";
+        background: url('../img/bg/chocco-full.png') center center / contain no-repeat;
+        width: rem(316px);
+        height: rem(330px);
+        margin-bottom: rem(16px);
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 2%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: rem(17px);
+    font-size: rem(48px);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: rem(57.6px);
+
+    @include tablet {
+      font-size: rem(48px);
+      margin-bottom: rem(4px);
+    }
+
+    @include mobile {
+      padding: 0 5%;
+      font-size: rem(40px);
+      line-height: rem(40px);
+    }
+
+
+  }
+
+  &__description {
+    font-size: rem(21px);
+    margin-bottom: rem(27px);
+
+    @include tablet {
+      padding: 0 25%;
+      margin-bottom: rem(20px);
+    }
+
+    @include mobile {
+      padding: 0 16%;
+      font-size: rem(18px);
+    }
+  }
+}
