@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   @include tablet {
     padding: 0 rem(20px);
@@ -20,7 +20,7 @@
     position: relative;
 
     &-link {
-      font-size: rem(22px);
+      font-size: 22px;
       display: flex;
       align-items: center;
     }

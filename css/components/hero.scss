@@ -6,19 +6,20 @@
   position: relative;
 
   @include tablet {
-    background-position: right bottom 68%;
+    background-position: right bottom 81%;
   }
 
   @include mobile {
-    background-position: right bottom 75%;
+    background-position: right bottom 91%;
     background-size: 68%;
   }
 
   &::before {
     content: url("../img/bg/hero-decor-1.png");
     position: absolute;
-    right: 0%;
-    bottom: -8%;
+    right: 7%;
+    bottom: -6%;
+    z-index: 1;
 
     @include tablet {
       content: none;
@@ -81,19 +82,19 @@
 
   &__heading {
     margin-bottom: rem(17px);
-    font-size: rem(48px);
+    font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: rem(57.6px);
 
     @include tablet {
-      font-size: rem(48px);
+      font-size: 48px;
       margin-bottom: rem(4px);
     }
 
     @include mobile {
       padding: 0 5%;
-      font-size: rem(40px);
+      font-size: 40px;
       line-height: rem(40px);
     }
 
@@ -101,17 +102,18 @@
   }
 
   &__description {
-    font-size: rem(21px);
+    font-size: 21px;
     margin-bottom: rem(27px);
+    max-width: 96%;
 
     @include tablet {
-      padding: 0 25%;
+      padding: 0 23%;
       margin-bottom: rem(20px);
     }
 
     @include mobile {
-      padding: 0 16%;
-      font-size: rem(18px);
+      padding: 0 8%;
+      
     }
   }
 }

@@ -89,7 +89,7 @@
   }
 
   &__content {
-    padding: rem(22px) rem(140px) rem(10px) rem(40px);
+    padding: rem(22px) rem(153px) rem(10px) rem(40px);
     flex: 1;
 
     @include tablet {
@@ -103,7 +103,7 @@
   }
 
   &__title {
-    font-size: rem(27px);
+    font-size: 27px;
     color: $black;
     margin-bottom: rem(8px);
   }

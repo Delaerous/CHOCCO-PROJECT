@@ -10,6 +10,12 @@
     padding: 0;
   }
 
+
+  &__title{
+    color: $green;
+  }
+
+
   &__col {
     flex: 1;
     margin-right: rem(20px);
@@ -62,7 +68,7 @@
     border-radius: 4px;
     background: $white;
     outline: none;
-    font-size: rem(14px);
+    font-size: 14px;
     color: #000;
 
     @include tablet {
@@ -118,7 +124,7 @@
     background: $darkGreen;
 
     @include mobile {
-      font-size: rem(16px);
+      font-size: 16px;
       padding: rem(21px) rem(41px) rem(21px) rem(41px);
     }
   }
@@ -127,7 +133,7 @@
     border: none;
     background: none;
     cursor: pointer;
-    color: inherit;
+    color: $green;
 
     &:focus {
       outline: none;

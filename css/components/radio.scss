@@ -7,6 +7,9 @@
     margin-right: 0;
   }
 
+  &__title {
+    color: $green;
+  }
   &__elem {
     position: absolute;
     left: -9999px;
