@@ -1,10 +1,10 @@
 html, body {
   height: 100%;
-  font-size: $baseFontSize;
   font-weight: 400;
 }
 
 html {
+  font-size: $baseFontSize;
   @include tablet {
     font-size: $baseFontSize - 1px;
   }
