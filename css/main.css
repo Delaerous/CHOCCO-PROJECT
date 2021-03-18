@@ -341,10 +341,12 @@ template {
 
 html, body {
   height: 100%;
-  font-size: 18px;
   font-weight: 400;
 }
 
+html {
+  font-size: 18px;
+}
 @media screen and (max-width: 768px) {
   html {
     font-size: 17px;
@@ -424,14 +426,14 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .section__title {
-    font-size: 2.2222222222rem;
+    font-size: 40px;
   }
 }
 
 .btn {
   padding: 21px 41px 21px 41px;
   border-radius: 100px;
-  font-size: 0.8888888889rem;
+  font-size: 16px;
   font-weight: 800;
   display: inline-block;
   color: #497870;
@@ -443,7 +445,7 @@ ul li {
 @media screen and (max-width: 480px) {
   .btn {
     padding: 1rem 2rem 1rem 2rem;
-    font-size: 1.0555555556rem;
+    font-size: 19px;
   }
 }
 .btn_type_light {
@@ -489,7 +491,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .headline__subtitle {
-    max-width: 100%;
+    max-width: 85%;
     margin: 0 auto;
   }
 }
@@ -503,20 +505,21 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: right bottom 68%;
+    background-position: right bottom 81%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    background-position: right bottom 75%;
+    background-position: right bottom 91%;
     background-size: 68%;
   }
 }
 .hero::before {
   content: url("../img/bg/hero-decor-1.png");
   position: absolute;
-  right: 0%;
-  bottom: -8%;
+  right: 7%;
+  bottom: -6%;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .hero::before {
@@ -579,38 +582,38 @@ ul li {
 }
 .hero__heading {
   margin-bottom: 0.9444444444rem;
-  font-size: 2.6666666667rem;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 3.2rem;
 }
 @media screen and (max-width: 768px) {
   .hero__heading {
-    font-size: 2.6666666667rem;
+    font-size: 48px;
     margin-bottom: 0.2222222222rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__heading {
     padding: 0 5%;
-    font-size: 2.2222222222rem;
+    font-size: 40px;
     line-height: 2.2222222222rem;
   }
 }
 .hero__description {
-  font-size: 1.1666666667rem;
+  font-size: 21px;
   margin-bottom: 1.5rem;
+  max-width: 96%;
 }
 @media screen and (max-width: 768px) {
   .hero__description {
-    padding: 0 25%;
+    padding: 0 23%;
     margin-bottom: 1.1111111111rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero__description {
-    padding: 0 16%;
-    font-size: 1rem;
+    padding: 0 8%;
   }
 }
 
@@ -618,7 +621,7 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -637,7 +640,7 @@ ul li {
   position: relative;
 }
 .header__phone-link {
-  font-size: 1.2222222222rem;
+  font-size: 22px;
   display: flex;
   align-items: center;
 }
@@ -670,6 +673,9 @@ ul li {
 .menu__list {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu__item {
   margin-right: 1.5555555556rem;
@@ -706,7 +712,7 @@ ul li {
   margin-right: 10px;
 }
 .feature__text {
-  font-size: 0.8888888889rem;
+  font-size: 16px;
   line-height: 1rem;
 }
 
@@ -737,7 +743,7 @@ ul li {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-65%);
 }
 @media screen and (max-width: 768px) {
   .benefits-section::before {
@@ -771,7 +777,7 @@ ul li {
   }
 }
 .benefits__item {
-  width: calc(100% / 3 - 35px);
+  width: calc(100% / 3 - 15px);
 }
 @media screen and (max-width: 480px) {
   .benefits__item {
@@ -827,13 +833,16 @@ ul li {
     margin-right: 0.5555555556rem;
   }
 }
+.benefit__text {
+  max-width: 98%;
+}
 @media screen and (max-width: 480px) {
   .benefit__text {
-    padding-right: 10%;
+    padding-right: 12%;
   }
 }
 .benefit__title {
-  font-size: 1.5rem;
+  font-size: 27px;
   color: #292929;
   margin-bottom: 0.7777777778rem;
 }
@@ -850,6 +859,8 @@ ul li {
 @media screen and (max-width: 480px) {
   .benefit__description {
     line-height: 22px;
+    max-width: 98%;
+    font-weight: 300;
   }
 }
 
@@ -866,7 +877,6 @@ ul li {
 @media screen and (max-width: 480px) {
   .reviews-section {
     background-position: right -7% top 0%;
-    display: none;
   }
 }
 .reviews-section::before {
@@ -1016,7 +1026,7 @@ ul li {
   }
 }
 .reviews__content {
-  padding: 1.2222222222rem 7.7777777778rem 0.5555555556rem 2.2222222222rem;
+  padding: 1.2222222222rem 8.5rem 0.5555555556rem 2.2222222222rem;
   flex: 1;
 }
 @media screen and (max-width: 768px) {
@@ -1031,7 +1041,7 @@ ul li {
   }
 }
 .reviews__title {
-  font-size: 1.5rem;
+  font-size: 27px;
   color: #292929;
   margin-bottom: 0.4444444444rem;
 }
@@ -1077,7 +1087,6 @@ ul li {
   height: 4.1111111111rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 0.3333333333rem;
   border: 6px solid transparent;
 }
 .interactive-avatar:hover {
@@ -1165,6 +1174,9 @@ ul li {
     padding: 0;
   }
 }
+.form__title {
+  color: #497870;
+}
 .form__col {
   flex: 1;
   margin-right: 1.1111111111rem;
@@ -1213,7 +1225,7 @@ ul li {
   border-radius: 4px;
   background: #ffffff;
   outline: none;
-  font-size: 0.7777777778rem;
+  font-size: 14px;
   color: #000;
 }
 @media screen and (max-width: 768px) {
@@ -1271,7 +1283,7 @@ ul li {
 }
 @media screen and (max-width: 480px) {
   .form__submit {
-    font-size: 0.8888888889rem;
+    font-size: 16px;
     padding: 1.1666666667rem 2.2777777778rem 1.1666666667rem 2.2777777778rem;
   }
 }
@@ -1279,7 +1291,7 @@ ul li {
   border: none;
   background: none;
   cursor: pointer;
-  color: inherit;
+  color: #497870;
 }
 .form__reset:focus {
   outline: none;
@@ -1292,6 +1304,9 @@ ul li {
 }
 .radio:last-child {
   margin-right: 0;
+}
+.radio__title {
+  color: #497870;
 }
 .radio__elem {
   position: absolute;
@@ -1351,6 +1366,9 @@ ul li {
   margin-right: 0.5555555556rem;
   cursor: pointer;
   border-radius: 4px;
+}
+.checkbox__title {
+  color: #497870;
 }
 
 .fixed-menu {
@@ -1432,7 +1450,7 @@ ul li {
   }
 }
 .footer__address {
-  font-size: 1.1666666667rem;
+  font-size: 21px;
   color: #292929;
   font-style: normal;
 }
@@ -1456,7 +1474,7 @@ ul li {
   padding-right: 0.3333333333rem;
 }
 .footer__phone-link {
-  font-size: 1.1666666667rem;
+  font-size: 21px;
   color: #497870;
   display: flex;
   align-items: center;
