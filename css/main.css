@@ -637,6 +637,7 @@ ul li {
   margin-right: 2.2222222222rem;
 }
 .header__phone {
+  padding-top: 0.2222222222rem;
   position: relative;
 }
 .header__phone-link {
@@ -664,6 +665,7 @@ ul li {
 
 .menu {
   flex: 1;
+  padding-top: 0.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -671,7 +673,6 @@ ul li {
   }
 }
 .menu__list {
-  display: flex;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
@@ -679,6 +680,7 @@ ul li {
 }
 .menu__item {
   margin-right: 1.5555555556rem;
+  margin-bottom: 0.5555555556rem;
 }
 .menu__item:last-child {
   margin-right: 0;
