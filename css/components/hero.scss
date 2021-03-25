@@ -5,7 +5,7 @@
   background-color: $blue;
   position: relative;
 
-  @include tablet {
+  @include tablets {
     background-position: right bottom 81%;
   }
 
@@ -21,7 +21,7 @@
     bottom: -6%;
     z-index: 1;
 
-    @include tablet {
+    @include tablets {
       content: none;
     }
   }
@@ -32,7 +32,7 @@
     left: 3%;
     bottom: -6%;
 
-    @include tablet {
+    @include tablets {
       content: none;
     }
   }
@@ -46,7 +46,7 @@
     padding-bottom: rem(50px);
     background: url('../img/bg/chocco.png') right center / 52% auto no-repeat;
 
-    @include tablet {
+    @include tablets {
       background: none;
     }
   }
@@ -57,7 +57,7 @@
     margin-bottom: auto;
     margin-top: auto;
 
-    @include tablet {
+    @include tablets {
       max-width: 100%;
       flex: 1;
       display: flex;
@@ -87,7 +87,7 @@
     text-transform: uppercase;
     line-height: rem(57.6px);
 
-    @include tablet {
+    @include tablets {
       font-size: 48px;
       margin-bottom: rem(4px);
     }
@@ -106,7 +106,7 @@
     margin-bottom: rem(27px);
     max-width: 96%;
 
-    @include tablet {
+    @include tablets {
       padding: 0 23%;
       margin-bottom: rem(20px);
     }

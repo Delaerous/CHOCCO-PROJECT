@@ -2,7 +2,7 @@
   flex: 1;
   padding-top: rem(7px);
 
-  @include tablet {
+  @include tablets {
     display: none;
   }
 

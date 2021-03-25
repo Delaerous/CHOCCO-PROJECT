@@ -1,7 +1,7 @@
 .form {
   display: flex;
 
-  @include tablet {
+  @include tablets {
     flex-direction: column;
     padding: 0 19%;
   }
@@ -20,7 +20,7 @@
     flex: 1;
     margin-right: rem(20px);
 
-    @include tablet {
+    @include tablets {
       margin-right: 0;
       margin-bottom: rem(10px);
     }
@@ -34,7 +34,7 @@
     display: flex;
     margin-bottom: rem(10px);
 
-    @include tablet {
+    @include tablets {
       margin-bottom:  rem(13px);
     }
 
@@ -45,7 +45,7 @@
     &_type_comments {
       margin-bottom: rem(30px);
 
-      @include tablet {
+      @include tablets {
         margin-bottom: rem(14px);
       }
     }
@@ -71,7 +71,7 @@
     font-size: 14px;
     color: #000;
 
-    @include tablet {
+    @include tablets {
       height: rem(36px);
       padding: rem(10px) rem(12px);
     }
@@ -80,7 +80,7 @@
       height: rem(155px);
       resize: none;
 
-      @include tablet {
+      @include tablets {
         height: rem(82px);
       }
     }
@@ -90,12 +90,12 @@
     }
   }
 
-  &__controls {
+  &__btn {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: rem(16px);
 
-    @include tablet {
+    @include tablets {
       margin-bottom: rem(22px);
     }
 
@@ -114,7 +114,8 @@
 
   &__btns {
     display: flex;
-    @include tablet {
+
+    @include tablets {
       justify-content: center;
     }
   }

@@ -3,7 +3,7 @@
   background: url("../img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
   z-index: 10;
 
-  @include tablet {
+  @include tablets {
     background-position: right -4% top 6%;
   }
 
@@ -22,7 +22,7 @@
     height: rem(321px);
     background: url("../img/bg/reviews-decor-3.png") bottom left / contain no-repeat ;
 
-    @include tablet {
+    @include tablets {
       width: rem(90px);
       height: rem(282px);
     }
@@ -43,7 +43,7 @@
     height: rem(193px);
     background: url("../img/bg/reviews-decor-2.png") bottom left / contain no-repeat ;
 
-    @include tablet {
+    @include tablets {
       width: rem(118px);
       height: rem(170px);
     }

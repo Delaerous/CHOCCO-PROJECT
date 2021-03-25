@@ -9,7 +9,7 @@
     top: 50%;
     transform: translateY(-65%);
 
-    @include tablet {
+    @include tablets {
       top: 30%;
     }
 

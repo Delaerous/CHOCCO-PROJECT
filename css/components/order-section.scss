@@ -10,7 +10,7 @@
     right: 2%;
     bottom: 10%;
 
-    @include tablet {
+    @include tablets {
       content: none;
     }
   }
@@ -21,7 +21,7 @@
     left: 2%;
     bottom: 10%;
 
-    @include tablet {
+    @include tablets {
       content: none;
     }
   }
@@ -32,7 +32,7 @@
     position: relative;
     z-index: 10;
 
-    @include tablet {
+    @include tablets {
       margin-bottom: rem(20px);
     }
 

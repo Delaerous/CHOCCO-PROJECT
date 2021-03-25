@@ -6,7 +6,7 @@
     margin-bottom: rem(13px);
     color: $black;
 
-    @include tablet {
+    @include tablets {
       margin-bottom: 0;
     }
   }
@@ -15,7 +15,7 @@
     max-width: 44%;
       margin: 0 auto;
 
-    @include tablet {
+    @include tablets {
       max-width: 55%;
       margin: 0 auto;
     }

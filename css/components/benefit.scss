@@ -18,7 +18,7 @@
     left: calc(100% - 20px);
     top: rem(62px);
 
-    @include tablet {
+    @include tablets {
       content: none;
     }
   }
@@ -61,7 +61,7 @@
     color: $black;
     margin-bottom: rem(14px);
 
-    @include tablet {
+    @include tablets {
       margin-bottom: rem(6px);
     }
 
