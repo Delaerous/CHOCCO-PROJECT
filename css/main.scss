@@ -13,6 +13,7 @@
 @import "components/header";
 @import "components/logo";
 @import "components/menu";
+@import "components/menu-mobile";
 @import "components/features";
 @import "components/feature";
 @import "components/hamburger";
@@ -21,6 +22,16 @@
 @import "components/benefits-section";
 @import "components/benefits";
 @import "components/benefit";
+
+
+
+// slider section
+@import "components/sliders-section";
+@import "components/sliders";
+@import "components/slide";
+@import "components/structure";
+
+
 
 //reviews section
 @import "components/reviews-section";
@@ -43,3 +54,7 @@
 @import "components/footer";
 @import "components/social";
 
+
+//modal
+//@import "components/modal.scss";
+@import "components/fullscreen-menu";
