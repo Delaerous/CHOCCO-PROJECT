@@ -12,7 +12,7 @@
 
 <body>
     <div class="wrapper">
-        <section class="hero">
+        <section class="hero" id="hero-section">
             <div class="container hero__container">
                 <header class="header">
                     <a href="#" class="logo header__logo">
@@ -53,7 +53,7 @@
                             8 800 903 90 90
                         </a>
                     </div>
-                    <div class="hamburger">
+                    <div id="openOverlay" class="hamburger">
                         <span class="hamburger__plank"></span>
                         <span class="hamburger__plank"></span>
                         <span class="hamburger__plank"></span>
@@ -89,7 +89,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section benefits-section">
+        <section class="section benefits-section" id="">
             <div class="container">
                 <div class="headline">
                     <h2 class="headline__title section__title">почему chocco?</h2>
@@ -156,7 +156,137 @@
                 </ul>
             </div>
         </section>
-        <section class="section reviews-section">
+        <section class="section sliders-section">
+            <div class="container sliders__container">
+                <div class="sliders">
+                    <a class="sliders__controls sliders__controls_left" href="#">
+                        <svg width="15" height="29" class="sliders__arrow">
+                            <use xlink:href="./img/icons/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </a>
+                    <ul class="sliders__list">
+                        <li class="sliders__item slide">
+                            <div class="slide__left-block">
+                                <div class="slide__picture">
+                                    <img src="./img/bg/s;ider-icon.png" alt="Батончик “Гранола виноград”"
+                                        class="slide__image">
+                                </div>
+                            </div>
+                            <div class="slide__right-block">
+                                <div class="slide__structure">
+                                    <div class="structure">
+                                        <div class="structure__content">
+                                            <svg width="46" height="46" class="structure__icon">
+                                                <use xlink:href="./img/icons/sprite.svg#product"></use>
+                                            </svg>
+                                            <div class="structure__title">Состав</div>
+                                            <div class="structure__dropdown">
+                                                <ul class="structure__list">
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="32" height="32" class="structure__item-icon">
+                                                                <use
+                                                                    xlink:href="./img/icons/sprite.svg#structure-grape">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Виноград</div>
+                                                        <div class="structure__weight">25 г</div>
+                                                    </li>
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="24" height="25" class="structure__item-icon">
+                                                                <use xlink:href="./img/icons/sprite.svg#structure-nuts">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Грецкий орех</div>
+                                                        <div class="structure__weight">32 г</div>
+                                                    </li>
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="24" height="24" class="structure__item-icon">
+                                                                <use xlink:href="./img/icons/sprite.svg#structure-seed">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Кунжутное семя</div>
+                                                        <div class="structure__weight">20 г</div>
+                                                    </li>
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="32" height="20" class="structure__item-icon">
+                                                                <use xlink:href="./img/icons/sprite.svg#structure-milk">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Сухое молоко</div>
+                                                        <div class="structure__weight">10 г</div>
+                                                    </li>
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="24" height="25" class="structure__item-icon">
+                                                                <use
+                                                                    xlink:href="./img/icons/sprite.svg#structure-sugar">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Зам. сахара</div>
+                                                        <div class="structure__weight">4 г</div>
+                                                    </li>
+                                                    <li class="structure__item">
+                                                        <div class="structure__item-picture">
+                                                            <svg width="24" height="19" class="structure__item-icon">
+                                                                <use
+                                                                    xlink:href="./img/icons/sprite.svg#structure-beans">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="structure__text">Какао бобы</div>
+                                                        <div class="structure__weight">4 г</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="slide__heading">Батончик “Гранола виноград”</h2>
+                                <div class="slide__content">
+                                    <div class="slide__row">
+                                        <p class="slide__description">
+                                            Гранола из винограда, грецкого ореха и кунжутных семечек.
+                                            В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                        </p>
+                                    </div>
+                                    <div class="slide__row">
+                                        <div class="slide__char">
+                                            <div class="slide__char-title">Калорийность</div>
+                                            <div class="slide__char-val">110 ккал</div>
+                                        </div>
+                                        <div class="slide__char">
+                                            <div class="slide__char-title">Вес</div>
+                                            <div class="slide__char-val">95 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__row">
+                                        <div class="slide__price">140 ₽</div>
+                                        <div class="slide__btn">
+                                            <a class="btn btn_type_dark" href="#">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="sliders__controls sliders__controls_right" href="#">
+                        <svg width="15" height="29" class="sliders__arrow">
+                            <use xlink:href="./img/icons/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section reviews-section" id="reviews-section">
             <div class="container reviews-section__container">
                 <h2 class="section__title reviews-section__title">Отзывы</h2>
                 <div class="reviews">
@@ -216,7 +346,7 @@
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="number" class="form__input">
                             </label>
                         </div>
                         <div class="form__row">
@@ -282,7 +412,7 @@
                 </form>
             </div>
         </section>
-        <section class="section map">
+        <section class="section map" id="contacts-section">
             <footer class="footer">
                 <div class="container">
                     <div class="footer__row">
@@ -361,6 +491,41 @@
             </li>
         </ul>
     </nav>
+    <div class="fullscreen-menu">
+        <div class="container">
+            <nav class="menu menu_mobile">
+                <ul class="menu__list menu__list_mobile">
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">О нас</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Батончики</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Команда</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Меню</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Отзывы</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item menu__item_mobile">
+                        <a href="#" class="menu__link_moble">Контакты </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="close" class="close">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts/modal.js"></script>
 </body>
 
 </html>
