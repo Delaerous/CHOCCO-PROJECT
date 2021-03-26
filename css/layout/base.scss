@@ -5,7 +5,7 @@ html, body {
 
 html {
   font-size: $baseFontSize;
-  @include tablet {
+  @include tablets {
     font-size: $baseFontSize - 1px;
   }
 
