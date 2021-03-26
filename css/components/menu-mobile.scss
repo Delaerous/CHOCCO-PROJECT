@@ -38,32 +38,31 @@
     position: fixed;
     top: rem(5px);
     right: rem(5px);
-    
     cursor: pointer;
+
+    &::before {
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+        top: rem(42px);
+        right: rem(42px);
+        width: rem(30px);
+        height: rem(4px);
+        background: #fff;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        content: "";
+        position: absolute;
+        top: rem(42px);
+        right: rem(42px);
+        width: rem(30px);
+        height: rem(4px);
+        background: #fff;
+    }
     
 }
 
-.close:before,
 
 
-.close:before {
-    transform: rotate(45deg);
-    content: "";
-    position: absolute;
-    top: rem(42px);
-    right: rem(42px);
-    width: rem(30px);
-    height: rem(4px);
-    background: #fff;
-}
-
-.close:after {
-    transform: rotate(-45deg);
-    content: "";
-    position: absolute;
-    top: rem(42px);
-    right: rem(42px);
-    width: rem(30px);
-    height: rem(4px);
-    background: #fff;
-}
