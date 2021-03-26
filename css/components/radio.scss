@@ -12,7 +12,7 @@
   }
   &__elem {
     position: absolute;
-    left: -9999px;
+    left: rem(-9999px);
 
     &:checked + .radio__visible::before {
       content: "";

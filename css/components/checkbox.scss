@@ -8,8 +8,8 @@
   }
 
   &__icon {
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
     fill: #2E4E3F;
     position: absolute;
     top: 50%;
@@ -20,7 +20,7 @@
 
   &__elem {
     position: absolute;
-    left: -9999px;
+    left: rem(-9999px);
 
     &:checked + .checkbox__visible > .checkbox__icon {
       display: block;

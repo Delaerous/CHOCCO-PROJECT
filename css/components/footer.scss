@@ -30,7 +30,7 @@
   }
 
   &__address {
-    font-size: 21px;
+    font-size: rem(21px);
     color: $black;
     font-style: normal;
 
@@ -47,14 +47,14 @@
     }
 
     &-icon {
-      width: 18px;
-      height: 18px;
+      width: rem(18px);
+      height: rem(18px);
       fill: $green;
       padding-right: rem(6px);
     }
 
     &-link {
-      font-size: 21px;
+      font-size: rem(21px);
       color: $green;
       display: flex;
       align-items: center;

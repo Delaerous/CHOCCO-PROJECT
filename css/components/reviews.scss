@@ -37,7 +37,7 @@
       height: rem(167px);
 
       @include mobile {
-        max-width: 127px;
+        max-width: rem(127px);
         width: 25%;
       }
     }
@@ -78,13 +78,13 @@
   }
 
   &__avatar-image {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
     object-fit: cover;
 
     @include tablets {
-      width: 130px;
-      height: 130px;
+      width: rem(130px);
+      height: rem(130px);
     }
   }
 
@@ -103,7 +103,7 @@
   }
 
   &__title {
-    font-size: 27px;
+    font-size: rem(27px);
     color: $black;
     margin-bottom: rem(8px);
   }

@@ -30,8 +30,8 @@
   
       &::before {
         content: "";
-        width: 75px;
-        height: 92px;
+        width: rem(75px);
+        height: rem(92px);
         position: absolute;
         right: 93%;
         top: 28%;
@@ -39,13 +39,13 @@
         background-size: contain;
   
         @include tablets {
-          width: 60px;
-          height: 80px;
+          width: rem(60px);
+          height: rem(80px);
         }
   
         @include mobile {
-          width: 64px;
-          height: 66px;
+          width: rem(64px);
+          height: rem(66px);
           right: 100%;
           top: 15%;
         }
@@ -53,8 +53,8 @@
   
       &::after {
         content: "";
-        width:99px;
-        height: 73px;
+        width:rem(99px);
+        height: rem(73px);
         position: absolute;
         left: 80%;
         top: 90%;
@@ -62,15 +62,15 @@
         background-size: contain;
   
         @include tablets {
-          width: 75px;
-          height: 70px;
+          width: rem(75px);
+          height: rem(70px);
           left: 80%;
           top: 89%;
         }
   
         @include mobile {
-          width: 70px;
-          height: 70px;
+          width: rem(70px);
+          height: rem(70px);
           left: 87%;
           top: 85%;
         }
@@ -104,14 +104,14 @@
     }
   
     &__heading {
-      font-size: 36px;
+      font-size: rem(36px);
       text-transform: uppercase;
       color: $black;
       margin-bottom: rem(23px);
       line-height: rem(44px);
   
       @include tablets {
-        font-size: 30px;
+        font-size: rem(30px);
         margin-bottom: rem(10px);
       }
     }
@@ -160,7 +160,7 @@
   
     &__price {
       color: $black;
-      font-size: 60px;
+      font-size: rem(60px);
       margin-right: rem(30px);
       white-space: nowrap;
     }

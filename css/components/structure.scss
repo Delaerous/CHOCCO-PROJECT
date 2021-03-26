@@ -17,7 +17,7 @@
     &::before {
       position: absolute;
       width: 100%;
-      height: 30px;
+      height: rem(30px);
       top: 100%;
     }
   }
@@ -38,12 +38,12 @@
     position: absolute;
     top: 0;
     left: 100%;
-    min-width: 270px;
+    min-width: rem(270px);
     color: $black;
     background: rgba(255, 255, 255, 0.8);
     padding: rem(18px) rem(14px);
     border-radius: 4px;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(rem(40px));
   }
 
   &__list {
@@ -70,8 +70,8 @@
   }
 
   &__item-picture {
-    width: 32px;
-    height: 32px;
+    width: rem(32px);
+    height: rem(32px);
     margin-right: rem(10px);
     display: flex;
     align-items: center;

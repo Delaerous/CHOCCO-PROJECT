@@ -2,10 +2,10 @@
   position: relative;
 
   &__container {
-    padding: 0 39px;
+    padding: 0 rem(39px);
 
     @include mobile {
-      padding: 0 10px;
+      padding: 0 rem(10px);
     }
   }
 
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 rem(10px);
 
     @include tablets {
       top: 28%;
@@ -42,26 +42,26 @@
     }
 
     &_left {
-      left: -40px;
+      left: rem(-40px);
 
       @include tablets {
-        left: 20px;
+        left: rem(20px);
       }
 
       @include mobile {
-        left: -5px;
+        left: rem(-5px);
       }
     }
 
     &_right {
-      right: -100px;
+      right: rem(-100px);
 
       @include tablets {
-        right: -21px;
+        right: rem(-21px);
       }
 
       @include mobile {
-        right: -5px;
+        right: rem(-5px);
       }
     }
   }

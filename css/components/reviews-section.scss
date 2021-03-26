@@ -36,7 +36,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: -10px;
+    left: rem(-10px);
     top: 100%;
     transform: translateY(-50%);
     width: rem(135px);
@@ -51,7 +51,7 @@
     @include mobile {
       width: rem(122px);
       height: rem(176px);
-      left: -34px;
+      left: rem(-34px);
     }
   }
 
