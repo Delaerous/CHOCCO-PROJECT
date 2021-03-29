@@ -22,7 +22,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.body__block{
+  overflow: hidden;
+}
 img {
   max-width: 100%;
 }

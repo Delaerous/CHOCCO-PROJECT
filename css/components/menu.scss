@@ -26,4 +26,24 @@
     font-size: $baseFontSize;
     display: inline-block;
   }
+  &_mobile {
+    @include tablets {
+      display: block;
+    }
+    font-size: rem(36px);
+    color: #fff;
+    text-align: center;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu__item {
+      margin-right: 0;
+    }
+    .menu__link{
+      font-size: rem(36px);
+    }
+  }
 }
