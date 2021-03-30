@@ -1,42 +1,38 @@
-
-
-.interactive-avatar {
-  width: rem(74px);
-  height: rem(74px);
+.interactive-avatar{
+  width: rem(84px);
+  height: rem(84px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
-  overflow: hidden;
-  border: 6px solid transparent;
+  position: relative;
   
-  &:hover {
+
+  &--active{
+    border-color: $green;
+  }
+
+  &:hover{
     border-color: $green;
     transition: 0.5s;
   }
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @include mobile {
-    width: rem(64px);
-    height: rem(64px);
-    margin-right: rem(10px);
-  }
-
-  &_active {
-    border: 6px solid $green;
-
-  }
-
-
-  &__link {
+  &__link{
+    border: rem(6px) solid transparent;
+    position: absolute;
+    width: rem(85px);
+    height: rem(85px);
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     display: block;
-    
   }
-
-  &__image {
+  &__img{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
   }
+  
 }
+
+
 

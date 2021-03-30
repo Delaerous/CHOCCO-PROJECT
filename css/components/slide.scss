@@ -8,7 +8,7 @@
     }
   
     &__left-block {
-      width: 60%;
+      width: 143%;
       display: flex;
       align-items: center;
       padding-left: rem(40px);
@@ -78,7 +78,7 @@
     }
   
     &__right-block {
-      width: 40%;
+     
   
       @include tablets {
         width: 100%;

@@ -1,33 +1,23 @@
-.fullscreen-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    flex-direction: column;
-    background: #2e3336;
-    z-index: 1000;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    
-    &.active {
-      display: flex;
-    }
-
-    &__close {
-        display: block;
-        position: absolute;
-        top: rem(25px);
-        right: rem(25px);
-      }
-
-    &__close-icon{
-        width: rem(18px);
-        height: rem(18px);
-        fill: #c2c2c3;
-      }
-    
-
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black;
+  z-index: 10;
+  &_show {
+   display: flex;
+   align-items: center; 
   }
+
+  &__close {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+  }
+}
