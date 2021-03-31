@@ -1,19 +1,19 @@
 
 
-const btn = document.querySelector('#hamburger');
-const popup = document.querySelector('#popup');
-const closeBtn = menu.querySelector('.popup__close');
+const btn = document.querySelector('.hamburger');
+const menu = document.querySelector('.fullscreen-menu');
+const closeBtn = menu.querySelector('.fullscreen-menu__close');
 const body = document.querySelector('body')
 
 const togle = ()=> {
-  popup.classList.toggle('active');
+  menu.classList.toggle('active');
   body.classList.toggle('body__block');
 }
 
 btn.addEventListener('click', togle)
 
 
-popup.addEventListener('click', (e) => {
+menu.addEventListener('click', (e) => {
   const target =e.target;
   const DataValue = target.dataset.scrollto;
    if (target.classList.contains('menu__link'))
