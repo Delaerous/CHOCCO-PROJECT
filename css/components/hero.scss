@@ -49,6 +49,9 @@
     @include tablets {
       background: none;
     }
+    &__full {
+      width: 100%;
+    }
   }
 
   &__text {

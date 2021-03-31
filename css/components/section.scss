@@ -1,24 +1,17 @@
-.section {
-  min-height: 100vh;
+.section{
+  
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: rem(62px) 0;
-
-  @include mobile {
-    padding: rem(90px) 0;
-  }
-
-  &__title {
-    font-size: rem($headerFontSize);
+  &__title{
+    font-size: rem(48px);
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: rem(60px);
     text-align: center;
-    color: $black;
-
-    @include mobile {
-      font-size: rem(40px);
-    }
+    color: black;
+    text-transform: uppercase;
   }
 }
+
+

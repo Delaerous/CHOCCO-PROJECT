@@ -20,30 +20,31 @@
     &:last-child {
       margin-right: 0;
     }
-  }
+  }}
 
-  &__link {
-    font-size: $baseFontSize;
-    display: inline-block;
-  }
-  &_mobile {
-    @include tablets {
-      display: block;
-    }
+.menu__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background: #2e3336;
+  z-index: 1000;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  display: none;
+
+  &__list {
     font-size: rem(36px);
-    color: #fff;
-    text-align: center;
-
-    .menu__list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .menu__item {
-      margin-right: 0;
-    }
-    .menu__link{
-      font-size: rem(36px);
-    }
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__active {
+    display: flex;
   }
 }
