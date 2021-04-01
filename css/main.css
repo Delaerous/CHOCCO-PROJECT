@@ -1452,6 +1452,112 @@ ul li {
   fill: white;
 }
 
+.reviews__section-title {
+  margin-bottom: 1.7777777778rem;
+}
+.reviews__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 12%;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .reviews__content {
+    padding: 0;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .reviews__content {
+    padding: 0;
+  }
+}
+.reviews__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5555555556rem;
+  color: black;
+}
+.reviews__text {
+  margin-bottom: 1.2222222222rem;
+  line-height: 1.3;
+}
+.reviews__author {
+  font-weight: 500;
+  color: black;
+}
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+.reviews__switcher-item {
+  margin-right: 0.2222222222rem;
+}
+.reviews__switcher-item:last-child {
+  margin-right: 0;
+}
+.reviews-section {
+  position: relative;
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .reviews-section {
+    margin-bottom: 1.3888888889rem;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .reviews-section {
+    margin-bottom: 16.3888888889rem;
+  }
+}
+@media screen and (device-height: 375px) and (orientation: landscape) {
+  .reviews-section {
+    margin-bottom: 5.5555555556rem;
+  }
+}
+.reviews-section:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  right: 3%;
+  width: 7.5555555556rem;
+  height: 4.7777777778rem;
+  background: url("./../img/bg/strawberry.png") center/contain no-repeat;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .reviews-section:before {
+    right: -4%;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .reviews-section:before {
+    top: -50%;
+  }
+}
+@media screen and (device-height: 375px) and (orientation: landscape) {
+  .reviews-section:before {
+    top: -16%;
+  }
+}
+.reviews-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4.4444444444rem;
+  width: 7.5555555556rem;
+  height: 11.2222222222rem;
+  background: url("./../img/bg/reviews-decor-2.png") center/contain no-repeat;
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .reviews-section:after {
+    bottom: -8.3333333333rem;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .reviews-section:after {
+    bottom: -16.6666666667rem;
+  }
+}
 .reviews__display {
   background: #F8FAF9;
   padding: 2.7777777778rem 2.5rem 1.8888888889rem;
@@ -1545,112 +1651,6 @@ ul li {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-.reviews__section-title {
-  margin-bottom: 1.7777777778rem;
-}
-.reviews__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 12%;
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  .reviews__content {
-    padding: 0;
-  }
-}
-@media screen and (device-width: 568px) and (orientation: landscape) {
-  .reviews__content {
-    padding: 0;
-  }
-}
-.reviews__title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5555555556rem;
-  color: black;
-}
-.reviews__text {
-  margin-bottom: 1.2222222222rem;
-  line-height: 1.3;
-}
-.reviews__author {
-  font-weight: 500;
-  color: black;
-}
-.reviews__switcher {
-  display: flex;
-  justify-content: center;
-}
-.reviews__switcher-item {
-  margin-right: 0.2222222222rem;
-}
-.reviews__switcher-item:last-child {
-  margin-right: 0;
-}
-.reviews__section {
-  position: relative;
-}
-@media screen and (max-width: 320px) and (orientation: portrait) {
-  .reviews__section {
-    margin-bottom: 1.3888888889rem;
-  }
-}
-@media screen and (device-width: 568px) and (orientation: landscape) {
-  .reviews__section {
-    margin-bottom: 16.3888888889rem;
-  }
-}
-@media screen and (device-height: 375px) and (orientation: landscape) {
-  .reviews__section {
-    margin-bottom: 5.5555555556rem;
-  }
-}
-.reviews__section:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 3%;
-  right: 3%;
-  width: 7.5555555556rem;
-  height: 4.7777777778rem;
-  background: url("./../img/bg/strawberry.png") center/contain no-repeat;
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  .reviews__section:before {
-    right: -4%;
-  }
-}
-@media screen and (device-width: 568px) and (orientation: landscape) {
-  .reviews__section:before {
-    top: -50%;
-  }
-}
-@media screen and (device-height: 375px) and (orientation: landscape) {
-  .reviews__section:before {
-    top: -16%;
-  }
-}
-.reviews__section:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4.4444444444rem;
-  width: 7.5555555556rem;
-  height: 11.2222222222rem;
-  background: url("./../img/bg/reviews-decor-2.png") center/contain no-repeat;
-}
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  .reviews__section:after {
-    bottom: -8.3333333333rem;
-  }
-}
-@media screen and (device-width: 568px) and (orientation: landscape) {
-  .reviews__section:after {
-    bottom: -16.6666666667rem;
-  }
 }
 .reviews__decor {
   position: absolute;
