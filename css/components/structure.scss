@@ -28,11 +28,19 @@
     .structure-info{
       display: block;
       left: rem(89px);
-      
     }
   }
 
   @include tablets{
+    display: none;
+  }
+  @include mobile-landscape{
+    display: none;
+  }
+  @include mobile-mini-landscape{
+    display: none;
+  }
+  @include iphoneX-landscape{
     display: none;
   }
   &__list{

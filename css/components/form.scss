@@ -44,6 +44,12 @@
       @include tablets {
         margin-bottom: rem(14px);
       }
+      @include mobile-mini-landscape {
+        margin-bottom: rem(0px);
+      }
+      @include iphoneX-landscape {
+        margin-bottom: rem(0px);
+      }
     }
   }
 
@@ -94,6 +100,9 @@
     @include tablets {
       margin-bottom: rem(22px);
     }
+    @include iphoneX-landscape {
+      margin-bottom: rem(5px);
+    }
 
     @include mobile {
       justify-content: center;
@@ -104,6 +113,9 @@
 
       @include mobile {
         margin-bottom:  rem(39px);
+      }
+      @include iphoneX-landscape {
+        margin-bottom:  rem(10px);
       }
     }
   }

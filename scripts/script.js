@@ -1,35 +1,33 @@
-//hamburger and scroll-to
-
-const fullMenu = document.querySelector(".menu__mobile");
-const hamburger = document.querySelector(".hamburger");
-const body = document.querySelector('body');
-const Link = $('.menu__link');
 
 
-hamburger.addEventListener('click', e => {
+const fullMenu = $(".menu__mobile");
+const hamburger = $(".hamburger");
+const body = $('body');
+const link = $('.menu__link');
+
+hamburger.on('click', e => {
   e.preventDefault();
+  if ($(fullMenu).hasClass('menu__mobile-active')) {
 
-  if (fullMenu.classList.contains('menu__mobile__active')) {
-
-    fullMenu.classList.remove('menu__mobile__active');
-    hamburger.classList.remove('hamburger__active');
-    body.classList.remove('body__block');
+    $(hamburger).removeClass('hamburger-active');
+    $(body).removeClass('body__block');
+    $(fullMenu).removeClass('menu__mobile-active')
   } else {
-  fullMenu.classList.add('menu__mobile__active');
-  hamburger.classList.add('hamburger__active');
-  body.classList.add('body__block');
+    $(fullMenu).addClass('menu__mobile-active');
+    $(hamburger).addClass('hamburger-active');
+    $(body).addClass('body__block');
   }
 });
 
-Link.on('click', (e) => {
+link.on('click', (e) => {
   e.preventDefault();
   const curLink = $(e.currentTarget);
   const dataValue = curLink.attr('data-scroll-to');
   scrollToSection(dataValue); 
-  if (body.classList.contains('body__block')) {
-    hamburger.classList.remove('hamburger__active');
-    body.classList.remove('body__block');
-    fullMenu.classList.remove('menu__mobile__active');
+  if ($("body").hasClass('body__block')) {
+    $(hamburger).removeClass('hamburger-active');
+    $(body).removeClass('body__block');
+    $(fullMenu).removeClass('menu__mobile-active');
   }
 })
 

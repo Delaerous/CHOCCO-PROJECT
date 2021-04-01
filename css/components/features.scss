@@ -7,4 +7,7 @@
     @include tablets {
         display: none;
     }
+    @include mobile-landscape {
+        bottom: 1rem
+    }
 }

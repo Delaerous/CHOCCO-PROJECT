@@ -20,6 +20,15 @@
   &__phone {
     padding-top: rem(4px);
     position: relative;
+    @include mobile-mini-landscape {
+      display: none;
+    }
+    @include iphoneX-landscape {
+      display: none;
+    }
+    @include mobile-landscape {
+      display: none;
+    }
 
     @include tablets {
       display: none;

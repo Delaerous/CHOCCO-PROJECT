@@ -16,3 +16,5 @@ const slyder = $('.product__list').bxSlider({
   
     slyder.goToNextSlide();
   });
+
+  

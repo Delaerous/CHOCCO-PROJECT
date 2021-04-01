@@ -5,6 +5,7 @@
     margin-bottom: rem(15px);
     position: relative;
     overflow: hidden;
+    
   
     &:before{
       content: "";
@@ -13,7 +14,10 @@
       top:5%;
       width: rem(128px);
       height: rem(176px);
-      background: url('./../../img/bg/reviews-leaf.png') center / contain no-repeat;
+      background: url('./../img/bg/reviews-leaf.png') center / contain no-repeat;
+      @include mobile-mini {
+        width: rem(108px);
+      }
     }
   
     &:after{
@@ -31,6 +35,9 @@
       @include mobile{
         display: none;
       }
+      @include mobile-mini-landscape{
+        display: none;
+      }
     }
   
     @include tablets{
@@ -41,6 +48,11 @@
     display: none;
   
     @include tablets{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    @include mobile-mini-landscape{
       flex-direction: column;
       text-align: center;
       align-items: center;
@@ -58,6 +70,12 @@
       height: rem(139px);
       margin-right: 0;
       margin-bottom: rem(30px);
+    }
+    @include mobile-mini-landscape{
+      width: rem(139px);
+      height: rem(139px);
+      margin-right: 0;
+      margin-bottom: rem(15px);
     }
     &-img{
       object-fit: cover;
@@ -77,6 +95,9 @@
   padding-right: 12%;
 
   @include tablets{
+    padding:0 ;
+  }
+  @include mobile-mini-landscape{
     padding:0 ;
   }
 }
@@ -108,10 +129,21 @@
 }
 &__section{
   position: relative;
+  @include mobile-mini {
+    margin-bottom: rem(25px);
+  }
+  @include mobile-mini-landscape {
+    margin-bottom: rem(295px);
+  }
+  @include iphoneX-landscape {
+    margin-bottom: rem(100px);
+  }
+
 
   &:before{
     content: "";
     position: absolute;
+    z-index: 1;
     top: 3%;
     right:3%;
     width: rem(136px);
@@ -120,6 +152,12 @@
 
     @include tablets{
       right: -4%;
+    }
+    @include mobile-mini-landscape{
+      top: -50%;
+    }
+    @include iphoneX-landscape{
+      top: -16%;
     }
   }
 
@@ -133,12 +171,13 @@
     background: url("./../img/bg/reviews-decor-2.png") center/contain no-repeat;
 
     @include mobile{
-      left:-4%;
+      bottom: rem(-150px);
+    }
+    @include mobile-mini-landscape{
+      bottom: rem(-300px);
     }
     
-    @include mobile{
-      background: none;
-    }
+    
   }
 
 }
@@ -152,8 +191,9 @@
     height: rem(267px);
   }
 
-  @include mobile{
-    display: none;
+  
+  @include mobile-mini-landscape{
+    margin-bottom: rem(-300px);
   }
 }
 }

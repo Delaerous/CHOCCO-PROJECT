@@ -12,6 +12,16 @@ html {
   @include mobile {
     font-size: $baseFontSize - 2px;
   }
+
+  @include mobile-mini {
+    font-size: $baseFontSize - 4px;
+  }
+  @include iphoneX-landscape {
+    font-size: $baseFontSize - 2px;
+  }
+  @include mobile-landscape {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 body {

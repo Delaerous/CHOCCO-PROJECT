@@ -1,8 +1,21 @@
 .menu {
+  
+  @include mobile-landscape {
+    display: none;
+  }
+  @include mobile-mini-landscape {
+    display: none;
+  }
   flex: 1;
   padding-top: rem(7px);
 
   @include tablets {
+    display: none;
+  }
+  @include iphoneX-landscape {
+    display: none;
+  }
+  @include mobile-landscape {
     display: none;
   }
 
@@ -36,6 +49,7 @@
   justify-content: center;
   color: $white;
   display: none;
+  
 
   &__list {
     font-size: rem(36px);
@@ -43,8 +57,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile-mini-landscape {
+      flex-direction: initial;
+    }
   }
-  &__active {
+  &-active {
     display: flex;
+    .menu__item {
+      @include mobile-mini-landscape {
+      
+      &:nth-child(4n+4) {
+        
+        margin-right: 0px;
+      }
+    }
   }
+}
 }

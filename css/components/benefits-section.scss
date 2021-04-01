@@ -1,6 +1,16 @@
 .benefits-section {
   position: relative;
   padding: rem(56px) 0;
+  @include mobile-mini {
+    margin-bottom: rem(20px);
+  }
+
+  @include mobile-mini-landscape {
+    margin-bottom: rem( 88px);
+  }
+  @include iphoneX-landscape {
+    margin-bottom: rem( 88px);
+  }
 
   &::before {
     content: url("../img/bg/benefits-decor-1.png");
@@ -16,6 +26,12 @@
     @include mobile {
       content: none;
     }
+    @include mobile-landscape {
+      content: none;
+    }
+    @include mobile-mini-landscape {
+      content: none;
+    }
   }
 
   &::after {
@@ -25,6 +41,15 @@
     bottom: -18%;
 
     @include mobile {
+      content: none;
+    }
+    @include mobile-landscape {
+      content: none;
+    }
+    @include mobile-mini-landscape {
+      content: none;
+    }
+    @include iphoneX-landscape {
       content: none;
     }
   }

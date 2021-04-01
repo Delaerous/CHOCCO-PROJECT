@@ -1,14 +1,20 @@
 .hamburger {
-  width: 26px;
-  height: 24px;
+  width: rem(26px);
+  height: rem(24px);
   flex-direction: column;
   justify-content: space-between;
   display: none;
-  &__active span {
+  &-active span {
     background: #fff;
     &:nth-child(1) {
       transform: rotate(45deg) translate(10px, 0px) ;
       transform-origin: left top;
+      @include iphoneX-landscape {
+        transform: rotate(45deg)  translate(8px, 0px); 
+      }
+      @include mobile-landscape {
+        transform: rotate(45deg)  translate(9px, 0px); 
+      }
     }
     &:nth-child(2) {
       display: none;
@@ -16,14 +22,40 @@
     &:nth-child(3) {
       transform: rotate(-45deg) translate(10px, -10px);
       transform-origin: right bottom;
+      @include mobile-mini {
+        transform: rotate(135deg) translate(14px, 9px); 
+      }
+      @include mobile-landscape {
+        transform: rotate(-45deg) translate(10px, -9px);
     }
-  }
+  }}
 
   @include tablets {
     display: inline-flex;
     position: absolute;
-    right: rem(42px);
-    top: rem(42px);
+    right: rem(21px);
+    top: rem(35px);
+    z-index:2000;
+  }
+  @include mobile-mini-landscape {
+    display: inline-flex;
+    position: absolute;
+    right: rem(21px);
+    top: rem(35px);
+    z-index:2000;
+  }
+  @include iphoneX-landscape {
+    display: inline-flex;
+    position: absolute;
+    right: rem(21px);
+    top: rem(35px);
+    z-index:2000;
+  }
+  @include mobile-landscape {
+    display: inline-flex;
+    position: absolute;
+    right: rem(21px);
+    top: rem(35px);
     z-index:2000;
   }
 

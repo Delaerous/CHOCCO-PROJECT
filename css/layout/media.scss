@@ -6,13 +6,46 @@
 
 
 @mixin tablets {
-  @media screen and (max-width: $tablets) {
+  @media screen and (max-width: $tablets) and (orientation:portrait) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $mobile) and (orientation:portrait) {
     @content;
   }
 }
+
+@mixin mobile-mini {
+  @media screen and (max-width: $mobile-mini) and (orientation:portrait) {
+    @content;
+  }
+}
+
+@mixin tablets-landscape {
+  @media screen and (device-width: $tablets-landscape) and (orientation:landscape) {
+    @content;
+  }
+}
+
+@mixin iphoneX-landscape {
+  @media screen and (device-height: $iphoneX-landscape) and (orientation:landscape) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape {
+  @media  screen and (device-height: $mobile-landscape) and (orientation:landscape){
+    @content;
+  }
+}
+
+
+@mixin mobile-mini-landscape {
+  @media  screen and (device-width: $mobile-mini-landscape) and (orientation:landscape){
+    @content;
+  }
+}
+
+

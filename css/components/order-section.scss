@@ -3,6 +3,7 @@
   background-size: cover;
   color: $green;
   position: relative;
+  
 
   &:before {
     content: url("../img/bg/order-decor-1.png");
@@ -11,6 +12,9 @@
     bottom: 10%;
 
     @include tablets {
+      content: none;
+    }
+    @include mobile-mini-landscape {
       content: none;
     }
   }
@@ -23,6 +27,12 @@
 
     @include tablets {
       content: none;
+    }
+    @include mobile-mini-landscape {
+      content: none;
+    }
+    @include iphoneX-landscape {
+      bottom: 0%;
     }
   }
 
@@ -38,6 +48,10 @@
 
     @include mobile {
       margin-bottom: rem(28px);
+    }
+    @include iphoneX-landscape {
+      top: rem(0px);
+      margin-bottom: rem(0px);
     }
   }
 }
