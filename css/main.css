@@ -677,6 +677,16 @@ ul li {
 .header__logo {
   margin-right: 2.2222222222rem;
 }
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .header__logo {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .header__logo {
+    margin-right: 0px;
+  }
+}
 .header__phone {
   padding-top: 0.2222222222rem;
   position: relative;
