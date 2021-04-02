@@ -10,4 +10,7 @@
     @include mobile-landscape {
         bottom: 1rem
     }
+    @include mobile-mini-landscape {
+        display: none;}
+    
 }

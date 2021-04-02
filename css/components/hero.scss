@@ -94,7 +94,8 @@
     text-transform: uppercase;
     line-height: rem(57.6px);
     @include mobile-mini-landscape {
-      font-size: rem(24px)
+      font-size: rem(24px);
+      line-height: rem(30px);
     }
 
     @include tablets {
@@ -123,6 +124,10 @@
 
     @include mobile {
       padding: 0 8%;
+      
+    }
+    @include mobile-mini-landscape {
+      display: none;
       
     }
   }
