@@ -9,12 +9,22 @@
     &:nth-child(1) {
       transform: rotate(45deg) translate(10px, 0px) ;
       transform-origin: left top;
+      @include tablets {
+        transform: rotate(45deg)  translate(10px, -1px);
+      }
       @include iphoneX-landscape {
         transform: rotate(45deg)  translate(8px, 0px); 
       }
       @include mobile-landscape {
         transform: rotate(45deg)  translate(9px, 0px); 
       }
+      @include mobile {
+        transform: rotate(45deg)  translate(8px, 0px); 
+      }
+      @include mobile-mini {
+        transform: rotate(45deg)  translate(10px, 1px);
+      }
+      
     }
     &:nth-child(2) {
       display: none;
@@ -33,7 +43,7 @@
   @include tablets {
     display: inline-flex;
     position: absolute;
-    right: rem(21px);
+    right: rem(0px);
     top: rem(35px);
     z-index:2000;
   }

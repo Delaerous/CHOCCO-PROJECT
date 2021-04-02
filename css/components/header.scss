@@ -5,9 +5,7 @@
   align-items: flex-start;
   
 
-  @include tablets {
-    padding: 0 rem(20px);
-  }
+  
 
   @include mobile {
     padding: 0;
