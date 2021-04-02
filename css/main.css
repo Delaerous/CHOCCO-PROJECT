@@ -625,6 +625,7 @@ ul li {
 @media screen and (device-width: 568px) and (orientation: landscape) {
   .hero__heading {
     font-size: 1.3333333333rem;
+    line-height: 1.6666666667rem;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
@@ -654,6 +655,11 @@ ul li {
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .hero__description {
     padding: 0 8%;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .hero__description {
+    display: none;
   }
 }
 
@@ -806,6 +812,11 @@ ul li {
 @media screen and (device-height: 480px) and (orientation: landscape) {
   .features {
     bottom: 1rem;
+  }
+}
+@media screen and (device-width: 568px) and (orientation: landscape) {
+  .features {
+    display: none;
   }
 }
 
