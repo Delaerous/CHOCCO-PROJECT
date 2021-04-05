@@ -1546,6 +1546,7 @@ ul li {
 }
 .team__desc {
   text-align: center;
+  font-weight: 300;
 }
 .team__description {
   height: 0;
@@ -1553,7 +1554,7 @@ ul li {
   transition: 0.3s;
   position: absolute;
   top: 100%;
-  width: 200px;
+  max-width: 233px;
 }
 .team__description-block {
   display: flex;
@@ -1588,6 +1589,7 @@ ul li {
 }
 .team__prof {
   color: #292929;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .team__prof {
