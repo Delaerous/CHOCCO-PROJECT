@@ -11,6 +11,9 @@
     text-align: center;
     color: black;
     text-transform: uppercase;
+    &-order {
+      color: $green
+    }
   }
 }
 

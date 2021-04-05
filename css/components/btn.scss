@@ -1,3 +1,4 @@
+
 .btn {
   padding: rem(21px) rem(41px) rem(21px) rem(41px);
   border-radius: 100px;
@@ -34,6 +35,25 @@
       background: $white;
       color: $green;
     }
+    &-submit {
+      background: $darkGreen;
+      color: $white;
+      &:hover {
+        background: $white;
+        color: $darkGreen;
+        transition: 0.3s;
+    }
   }
+}
 
+  &_type_transparent {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        color: $darkGreen;
+    }
+}
 }

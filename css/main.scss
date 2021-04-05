@@ -27,14 +27,15 @@
 // slider section
 
 @import "components/products";
-
 @import "components/structure";
+// team section
+@import "components/teams.scss";
 
 
 
 
 //reviews section
-@import "components/reviews";
+@import "components/reviews" ;
 @import "components/interactive-avatar";
 
 // form section
@@ -42,6 +43,7 @@
 @import "components/form";
 @import "components/radio";
 @import "components/checkbox";
+@import "components/modal";
 
 // fixed menu
 @import "components/fixed-menu";
@@ -52,6 +54,7 @@
 // footer
 @import "components/footer";
 @import "components/social";
+
 
 
 

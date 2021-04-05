@@ -32,6 +32,9 @@
     &:nth-child(3) {
       transform: rotate(-45deg) translate(10px, -10px);
       transform-origin: right bottom;
+      @include mobile {
+        transform:rotate(-45deg) translate(9px, -10px); 
+      }
       @include mobile-mini {
         transform: rotate(135deg) translate(14px, 9px); 
       }
