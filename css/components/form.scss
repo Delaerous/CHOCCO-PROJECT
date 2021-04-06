@@ -54,7 +54,8 @@
     &:nth-last-child(2) {
         margin-bottom: rem(44px);
         padding: 0 0 0;
-    }
+        @include mobile-mini {margin-bottom: rem(20px);
+    }}
     
     @include tablets {
         padding: 0;

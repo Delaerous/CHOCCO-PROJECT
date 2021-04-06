@@ -12,7 +12,10 @@
     color: black;
     text-transform: uppercase;
     &-order {
-      color: $green
+      color: $green;
+      @include mobile-mini {
+        margin-bottom: rem(15px);
+      }
     }
   }
 }

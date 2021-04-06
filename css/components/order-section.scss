@@ -3,7 +3,7 @@
   background-size: cover;
   color: $green;
   position: relative;
-  
+
 
   &:before {
     content: url("../img/bg/order-decor-1.png");
@@ -49,6 +49,7 @@
     @include mobile {
       margin-bottom: rem(28px);
     }
+    
     @include iphoneX-landscape {
       top: rem(0px);
       margin-bottom: rem(0px);

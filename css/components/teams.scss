@@ -25,7 +25,6 @@
     
         @include tablets {
             margin-right: 0;
-            margin-bottom: 16px;
         }
     }
     &__member {
@@ -73,6 +72,7 @@
         border: 0;
         background: transparent;
         outline: none;
+        margin-bottom: rem(21px);
     }
     &__prof {
         color: #292929;
